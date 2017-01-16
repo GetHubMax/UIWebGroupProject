@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta charset="UTF-8">
+	<script src="main.js"></script>
+	<script src="d3.js"></script>
+	<script src="barGraph.js"></script>
+	<script src="lineGraph.js"></script>
+	<script type="text/javascript"src="pieGraph.js"></script>
+	<script src="sidePanel.js"></script>
+	<script src="mainPanel.js"></script>
+	<script src="loadData.js"></script>
+	<script src="sql.js"></script>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>testing testing</title>
+    </script>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div id="logo">
+                <a id="logo" href="index.html">
+                    <img src="logo2.png" width=100%>
+                </a>
+            </div>
+
+            <div>
+                <ul class="header">
+                    <li><a href="index.html">HOME</a>
+                    </li>
+                    <li><a href="#">TEAMS</a>
+                    </li>
+                    <li><a href="#">SEASON RESULTS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="graphContainer">
+
+                <div class="dropDown">
+                    <p>
+                        <select>
+                            <option>NZ teams</option>
+                            <option>AUS teams</option>
+                            <option disabled>----------------</option>
+                            <option>Adelaide Thunderbirds</option>
+                            <option>Melbourne Vixens</option>
+                            <option>New South Wales Swifts</option>
+                            <option>Queensland Firebirds</option>
+                            <option>West Coast Fever</option>
+                            <option disabled>----------------</option>
+                            <option>Mainland Tactix</option>
+                            <option>Central Pulse</option>
+                            <option>Northern Mystics</option>
+                            <option>Southern Steel</option>
+                            <option>Waikato BOP Magic</option>
+                        </select>vs
+                        <select>
+                            <option>AUS teams</option>
+                            <option>NZ teams</option>
+                            <option disabled>----------------</option>
+                            <option>ALL TEAMS</option>
+                            <option disabled>----------------</option>
+                            <option>Adelaide Thunderbirds</option>
+                            <option>Melbourne Vixens</option>
+                            <option>New South Wales Swifts</option>
+                            <option>Queensland Firebirds</option>
+                            <option>West Coast Fever</option>
+                            <option disabled>----------------</option>
+                            <option>Mainland Tactix</option>
+                            <option>Central Pulse</option>
+                            <option>Northern Mystics</option>
+                            <option>Southern Steel</option>
+                            <option>Waikato BOP Magic</option>
+                        </select>&#8594;
+                        <!-- need to turn into 'go' button -->
+                    </p>
+                </div>
+
+                <div class="dynTitle">
+                    <p>This is the dynamic title that tells you about the graph and probably has <a href=#>links</a>
+                    </p>
+                </div>
+                <p>graphs here</p>
+				<svg id="graph" width="100%" height="600">
+					
+				</svg>
+                <div class="graphKey">
+                    <p>graph key here</p>
+                </div>
+            </div>
+
+            <div id="sidebarContainer" class="sidebar">
+                <p><a href="#">clear all</a>
+                </p>
+                <p><a href="#">SEASON</a>
+                </p>
+                <p><a href="#">VENUE</a>
+                </p>
+                <p><a href="#">DATA</a>
+                </p>
+            </div>
+
+        </div>
+
+
+    </body>
+
+    <script>
+    loadData();
+    </script>
+
+
+</html>

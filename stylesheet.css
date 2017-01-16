@@ -1,0 +1,258 @@
+@CHARSET "ISO-8859-1";
+
+/*header-currently is links but need to be in div/span?*/
+/*p*/
+/*spans or divs for content*/
+/* pink is #F00492 blue is #00ACEE */
+
+body{
+	background-color: #00ACEE;
+}
+h1{
+	
+}
+h2{
+	
+}
+p{
+	font-family: Avant Garde, Century Gothic, sans-serif;
+	font-size: 16px;
+	/*float: center;*/
+	text-align: center;
+}
+
+#container {
+    margin-left:0px;
+    margin-right:0px;
+    width:100%;
+    background-color:#00ACEE;
+}
+
+/*HEADER MENU BAR*/
+
+#logo a{
+	/*float:left;*/
+	position:absolute;
+	left: 5%;
+}
+#logo div{
+	position:relative;
+	width: 100%;
+}
+#logo img{
+	    max-width: 100%;
+    height: auto;
+}
+
+
+.header {
+    text-align:center;
+    padding: 5px;
+    background-color:#F00492;
+    list-style:none;
+}
+
+ul.header li {
+    display:inline-block;
+    padding-left: 50px;
+}
+
+ul.header a {
+    margin:0px;
+    padding:10px;
+    font-family: Rockwell, sans-serif;
+    color: white;
+	text-transform: uppercase;
+	text-decoration:none;
+	font-weight: normal;
+	font-size: 2vw; /*24px*/
+}
+ul.header a:hover {
+    background-color:#F336A8;
+    font-weight: bold;
+    padding: 10px;
+}
+/*SIDE BAR*/
+
+#tweetContainer{
+	position: relative;
+	float: left;
+	width:22%;
+	top: 60px;
+	background-color:#F00492;
+}
+
+#sidebar div{
+	position: relative;
+	float: left;
+	width:22%;
+	background-color:#F00492;
+}
+
+#sidebar a {
+	font-family: Rockwell, sans-serif;
+	color: #F99BD3;
+	text-decoration:none;
+	font-weight: normal;
+	font-size: 1.5vw;
+}
+
+#sidebar a:hover{
+	color: white;
+	font-weight: none;
+}
+
+.sideButton{
+ font-family: Rockwell, sans-serif;
+    color: white;
+ text-transform: uppercase;
+ text-decoration:none;
+ font-weight: normal;
+ font-size: 22px;
+ margin: 0px 0px 3px 0px;
+ border-style: solid;
+ border-width: 2px;
+ border-color: #F99BD3;
+}
+.sideButton:hover{
+	background-color:#F336A8;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+#sidebar{
+	position: relative;
+	float: left;
+    width:22%;
+    /*top: 60px;*/
+	top: 10%;
+    /*left: 25px;*/
+    /*padding-left: 20px; padding-right: 20px;*/
+    background-color:#F00492;
+	height: 80%;
+}
+
+#sidebarContainer{
+	position: relative;
+	margin-top: 5%;
+	float: left;
+    width:22%;
+    /*top: 60px;*/
+	top: 10%;
+	height: 80%;
+    /*left: 25px;*/
+    /*padding-left: 20px; padding-right: 20px;*/
+    background-color:#F00492;
+}
+
+.sidebarSegmentSeason{
+	overflow-y:auto;
+	max-height: 200px;
+}
+
+.sidebarSegmentVenue{
+	overflow-y:auto;
+	height: 200px;
+	max-height: 100px;
+}
+
+.sideLabel {	
+	margin: 0px;
+}
+
+.sideLabel:hover {
+	background-color:#F336A8;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+/*MAIN PANEL*/
+
+#graphContainer{
+	position: relative;
+	float: right;
+    width:75%;
+    height: 100%;
+    /*padding-left: 20px; padding-right: 20px;*/
+    background-color:white;
+}
+
+#mapContainer{
+	position: relative;
+	float: right;
+	width: 75%;
+	height: 100%;
+	background-color: white;
+}
+
+.dynTitle div{
+	position: absolute;
+	top: 100px; /*doesn't do anything*/
+
+}
+.dynTitle p{
+    font-family: Rockwell, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dynTitle a{
+	color: #00ACEE;
+}
+.dynTitle a:hover{
+	color: #F00492;
+}
+
+.graph{
+	/*position*/
+	position: absolute;
+} 
+
+.mapButton{
+	cursor: pointer;
+}
+
+#gButton {
+	position: absolute;
+	left: 5%;
+	top: 15%;
+}
+
+#gButton:hover{
+	cursor: pointer;
+}
+
+.graphKey{
+	/*position*/
+}
+.graphKey div{
+	top: 200px;
+		position: absolute;
+}
+	.col1{ background-color: #00ACEE;}
+	.col2{ background-color: #F00492; }
+	.colNZ{ background-color: yellow;}
+	.colAUS{ background-color: black;}
+	.colThunderbirds{ background-color: #FF4791; color: #FF4791;}
+	.colPulse{ background-color: #FFFF47; }
+	.colTactix{ background-color: #D11919; }
+	.colVixens{ background-color: #00CC99; }
+	.colMystics{ background-color: #476CDA; }
+	.colFirebirds{ background-color: #853385; }
+	.colSteel{ background-color: #6CDAFF; }
+	.colSwifts{ background-color: #FF3300; }
+	.colFever{ background-color: #19A347; }
+	.colMagic{ background-color: black; }
+	
+line {
+	stroke: black;
+}
+
+path{
+	fill: none;
+}
+
+text {
+	font-family: Arial;
+	font-size: 9pt;
+}
